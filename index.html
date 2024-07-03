@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>calculator</title>
+</head>
+
+<body>
+    <div class="head">
+        <!-- <h1 class="headding">RAJAT'S CALCULATOR</h1> -->
+        <div class="calculator">
+            <input type="text" id="display" readonly></input>
+            <div class="button-container">
+                <button class="button" onclick="cartqun= ''; document.querySelector('#display').
+    value = cartqun; audio.play()">c</button>
+                <button class="button" onclick="cartqun = cartqun + '1'; document.querySelector('#display').
+    value = cartqun; audio.play()">1</button>
+                <button class="button" onclick="cartqun = cartqun + '2'; document.querySelector('#display').
+    value = cartqun; audio.play()">2</button>
+                <button class="button" onclick="cartqun = cartqun + '-'; document.querySelector('#display').
+    value = cartqun; audio.play()">-</button>
+                <button class="button" onclick="cartqun = cartqun + '3'; document.querySelector('#display').
+    value = cartqun; audio.play()">3</button>
+                <button class="button" onclick="cartqun = cartqun + '4'; document.querySelector('#display').
+    value = cartqun; audio.play()">4</button>
+                <button class="button" onclick="cartqun = cartqun + '+'; document.querySelector('#display').
+    value = cartqun; audio.play()">+</button>
+                <button class="button" onclick="cartqun = cartqun + '5'; document.querySelector('#display').
+    value = cartqun; audio.play()">5</button>
+                <button class="button" onclick="cartqun = cartqun + '6'; document.querySelector('#display').
+    value = cartqun; audio.play()">6</button>
+                <button class="button" onclick="cartqun = cartqun + '*'; document.querySelector('#display').
+    value = cartqun; audio.play()">*</button>
+                <button class="button" onclick="cartqun = cartqun + '7'; document.querySelector('#display').
+    value = cartqun; audio.play()">7</button>
+                <button class="button" onclick="cartqun = cartqun + '8'; document.querySelector('#display').
+    value = cartqun; audio.play()">8</button>
+                <button class="button" onclick="cartqun = cartqun + '/'; document.querySelector('#display').
+    value = cartqun; audio.play()">/</button>
+                <button class="button" onclick="cartqun = cartqun + '9'; document.querySelector('#display').
+    value = cartqun; audio.play()">9</button>
+                <button class="button" onclick="cartqun = cartqun + '0'; document.querySelector('#display').
+    value = cartqun; audio.play()">0</button>
+                <button class="button" onclick="let result= eval(cartqun); cartqun = result; document.querySelector('#display').
+    value = cartqun; audio.play()">=</button>
+                <button class="button" onclick="cartqun = cartqun + '.'; document.querySelector('#display').
+    value = cartqun; audio.play()">.</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script >
+        let cartqun = '' ;
+        document.querySelector('#display').
+        value = cartqun;
+</script>
+<script type="text/javascript">
+        const audio = new Audio();
+        audio.src = "music/mixkit-gate-latch-click-1924.mp3"
+    </script>
+</body>
+
+</html>
